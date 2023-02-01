@@ -1,4 +1,4 @@
-import StyledButton, { GreatButton } from './components/Button/Button'
+import StyledButton, { GreatButton, SubmitButton } from './components/Button/Button'
 import './App.css';
 
 function App() {
@@ -14,6 +14,10 @@ function App() {
         <br />
       </div>
       <GreatButton as='a'>Great Button</GreatButton>
+      <div>
+        <br />
+      </div>
+      <SubmitButton>Submit</SubmitButton>
     </div>
   );
 }
