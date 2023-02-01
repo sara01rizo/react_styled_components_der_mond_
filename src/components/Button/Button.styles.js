@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled, {keyframes} from "styled-components";
 
 export const StyledButton = styled.button`
   cursor: pointer;
@@ -32,6 +32,21 @@ export const SubmitButton = styled(StyledButton).attrs({
         box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
         transform: translateY(4px);
     }
+`
+
+const rotate = keyframes`
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+`
+
+export const AnimatedLogo = styled.img`
+    height: 40vmin;
+    pointer-events: none;
+    animation: ${rotate} infinite 10s linear;
 `
 
 // attr can accept props in a function 
