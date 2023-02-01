@@ -13,9 +13,11 @@ function App() {
       <div>
         <br />
       </div>
-      <GreatButton>Great Button</GreatButton>
+      <GreatButton as='a'>Great Button</GreatButton>
     </div>
   );
 }
 
 export default App;
+
+// Polymorphic prop a tag
