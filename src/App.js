@@ -1,6 +1,5 @@
-import StyledButton from './components/Button/Button'
+import StyledButton, { GreatButton } from './components/Button/Button'
 import './App.css';
-
 
 function App() {
   return (
@@ -11,6 +10,10 @@ function App() {
         <br />
       </div>
       <StyledButton variant='outline'>Button Props</StyledButton>
+      <div>
+        <br />
+      </div>
+      <GreatButton>Great Button</GreatButton>
     </div>
   );
 }

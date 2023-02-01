@@ -1,3 +1,4 @@
-import { StyledButton } from './Button.styles'
+import { StyledButton, GreatButton } from './Button.styles'
 
 export default StyledButton
+export { GreatButton }
