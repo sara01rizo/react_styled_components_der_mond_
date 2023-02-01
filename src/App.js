@@ -7,6 +7,10 @@ function App() {
     <div className="App">
       {/* <button>Button</button> */}
       <StyledButton>Styled Button</StyledButton>
+      <div>
+        <br />
+      </div>
+      <StyledButton variant='outline'>Button Props</StyledButton>
     </div>
   );
 }
