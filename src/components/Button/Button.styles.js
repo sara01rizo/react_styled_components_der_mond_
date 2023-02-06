@@ -50,10 +50,9 @@ export const AnimatedLogo = styled.img`
 `
 
 export const DarkButton = styled(StyledButton)`
-    border: 2px solid ${props => props.theme.dark.primary};
-    color: ${(props) => props.theme.dark.text};
-    background-color: 2px solid ${(props) => props.theme.dark.primary
-    }
+border: 2px solid ${props => props.theme.dark.primary};
+background-color: ${props => props.theme.dark.primary};
+color: ${props => props.theme.dark.text};
 `
 
 // attr can accept props in a function 

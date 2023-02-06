@@ -1,4 +1,4 @@
-import { ThemeProvider } from 'styled-components';
+import { ThemeProvider,  createGlobalStyle } from 'styled-components';
 import StyledButton, { GreatButton, SubmitButton, DarkButton } from './components/Button/Button'
 import './App.css';
 import './styles.css';
@@ -7,18 +7,26 @@ import { AnimatedLogo } from './components/Button/Button.styles';
 
 const theme = {
   dark: {
-    primary: '#282828',
-    text: '#ddd'
+    primary: '#000',
+    text: '#fff'
   },
   light: {
-    primary: '#ddd',
-    text: '#282828'
-  }
+    primary: '#fff',
+    text: '#000'
+  },
+  fontFamily: 'Roboto'
 }
+
+const GlobalStyle = createGlobalStyle`
+  button {
+    font-family: ${props => props.theme.fontFamily};
+  }
+`
 
 function App() {
   return (
     <ThemeProvider theme={theme}>
+      <GlobalStyle />
       <div className="App">
         {/* <img src={rotationDemo} className="App-logo" alt="rotation-demo" /> */}
         {/* <button>Button</button> */}
