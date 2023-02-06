@@ -49,4 +49,11 @@ export const AnimatedLogo = styled.img`
     animation: ${rotate} infinite 10s linear;
 `
 
+export const DarkButton = styled(StyledButton)`
+    border: 2px solid ${props => props.theme.dark.primary};
+    color: ${(props) => props.theme.dark.text};
+    background-color: 2px solid ${(props) => props.theme.dark.primary
+    }
+`
+
 // attr can accept props in a function 
